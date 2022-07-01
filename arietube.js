@@ -114,7 +114,7 @@ module.exports = arietube = async (arietube, m, chatUpdate, store) => {
         }
 	    
         // Public & Self
-        if (!arietube.public) {
+        if (!arietube.Self) {
             if (!m.key.fromMe) return
         }
 
@@ -531,14 +531,6 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             delete this.suit[id]
             }, 60000), poin, poin_lose, timeout
             }
-            }
-            break
-	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                arietube.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/9ecd6b67b6c5715431a4b.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n \n⭔ cek katalog kami di https://sociabuzz.com/arietube/shop\n\nklo minat, bisa chat owner\nhttps://wa.me/6285828357727 (Owner)\n\nkali aja mau donasi cek disini https://sociabuzz.com/arietube/tribe` }, { quoted: m })
-            }
-            break
-            case 'sc': {
-                m.reply('Script : https://youtu.be/NqZ_kkUQvlA\n\n Jangan lupa subscribe\n\nDonasi : https://sociabuzz.com/arietube/tribe')
             }
             break
             case 'chat': {
@@ -2918,32 +2910,7 @@ let capt = `⭔ Title: ${judul}
 ╟👤 ${prefix}setmenu [option]
 ╟
 ╚═════ ▓▓ ࿇`
-                let btn = [{
-                                urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://youtu.be/NqZ_kkUQvlA'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 858-2835-7727'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Contact Owner',
-                                    id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
-                                }
-                            }]
+                
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
                         arietube.send5ButImg(m.chat, anu, arietube.user.name, global.thumb, btn, global.thumb)
