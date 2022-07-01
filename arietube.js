@@ -2910,19 +2910,6 @@ let capt = `⭔ Title: ${judul}
 ╟👤 ${prefix}setmenu [option]
 ╟
 ╚═════ ▓▓ ࿇`
-                
-                         let setbot = db.data.settings[botNumber]
-                        if (setbot.templateImage) {
-                        arietube.send5ButImg(m.chat, anu, arietube.user.name, global.thumb, btn, global.thumb)
-                        } else if (setbot.templateGif) {
-                        arietube.send5ButGif(m.chat, anu, arietube.user.name, global.vitube, btn, global.thumb)
-                        } else if (setbot.templateVid) {
-                        arietube.send5ButVid(m.chat, anu, arietube.user.name, global.vitube, btn, global.thumb)
-                        } else if (setbot.templateMsg) {
-                        arietube.send5ButMsg(m.chat, anu, arietube.user.name, btn)
-                        } else if (setbot.templateLocation) {
-                        arietube.send5ButLoc(m.chat, anu, arietube.user.name, global.thumb, btn)
-                        }
                      }
             break
             default:
