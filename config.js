@@ -19,11 +19,11 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6285828357727']
-global.premium = ['6285828357727']
+global.owner = ['62882000921484']
+global.premium = ['62882000921484']
 global.packname = 'Arie Tube'
-global.author = 'Arie Tube'
-global.sessionName = 'Qrbyarietube'
+global.author = 'Zakytod'
+global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
