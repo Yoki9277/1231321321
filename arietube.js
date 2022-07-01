@@ -2909,8 +2909,7 @@ let capt = `⭔ Title: ${judul}
 ╟👤 ${prefix}setexif
 ╟👤 ${prefix}setmenu [option]
 ╟
-╚═════ ▓▓ ࿇`
-                     }
+╚═════ ▓▓ ࿇`}
             break
             default:
                 if (budy.startsWith('=>')) {
