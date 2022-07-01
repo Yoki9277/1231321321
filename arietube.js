@@ -2821,27 +2821,6 @@ let capt = `⭔ Title: ${judul}
 ╟🔃 ${prefix}stalk [option] [query]
 ╚═════ ▓▓ ࿇
 
-╔═══❖•ೋ° *𝐑𝐚𝐧𝐝𝐨𝐦 𝐌𝐞𝐧𝐮*
-╟
-╟🔗 ${prefix}coffe
-╟🔗 ${prefix}quotesanime
-╟🔗 ${prefix}motivasi
-╟🔗 ${prefix}dilanquote
-╟🔗 ${prefix}bucinquote
-╟🔗 ${prefix}katasenja
-╟🔗 ${prefix}puisi
-╟🔗 ${prefix}couple
-╟🔗 ${prefix}anime
-╟🔗 ${prefix}waifu
-╟🔗 ${prefix}husbu
-╟🔗 ${prefix}neko
-╟🔗 ${prefix}shinobu
-╟🔗 ${prefix}waifus (nsfw)
-╟🔗 ${prefix}nekos (nsfw)
-╟🔗 ${prefix}trap (nsfw)
-╟🔗 ${prefix}blowjob (nsfw)
-╚═════ ▓▓ ࿇
-
 ╔═══❖•ೋ° *𝐓𝐞𝐱𝐭 𝐁𝐞𝐫𝐠𝐚𝐲𝐚*
 ╟
 ╟🕶️ ${prefix}3dchristmas
