@@ -3052,7 +3052,44 @@ let capt = `⭔ Title: ${judul}
 ╟👤 ${prefix}setmenu [option]
 ╟
 ╚═════ ▓▓ ࿇`
-                
+                let btn = [{
+                                urlButton: {
+                                    displayText: 'Source Code',
+                                    url: 'https://youtu.be/NqZ_kkUQvlA'
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: '+62 858-2835-7727'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Status Bot',
+                                    id: 'ping'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Script',
+                                    id: 'sc'
+                                }
+                            }]
+                         let setbot = db.data.settings[botNumber]
+                        if (setbot.templateImage) {
+                        arietube.send5ButImg(m.chat, anu, arietube.user.name, global.thumb, btn, global.thumb)
+                        } else if (setbot.templateGif) {
+                        arietube.send5ButGif(m.chat, anu, arietube.user.name, global.vitube, btn, global.thumb)
+                        } else if (setbot.templateVid) {
+                        arietube.send5ButVid(m.chat, anu, arietube.user.name, global.vitube, btn, global.thumb)
+                        } else if (setbot.templateMsg) {
+                        arietube.send5ButMsg(m.chat, anu, arietube.user.name, btn)
+                        } else if (setbot.templateLocation) {
+                        arietube.send5ButLoc(m.chat, anu, arietube.user.name, global.thumb, btn)
+                        }
                      }
             break
             default:
